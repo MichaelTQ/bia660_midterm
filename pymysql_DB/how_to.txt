@@ -3,8 +3,12 @@ First you should manually create all the tables, using queries from table_manage
 Mysql backup database:
 
 $> mysqldump -u root -p [database_name] > [file_name].sql
+In our case:
+$> mysqldump -u root -p ios_compare_db > [file_name].sql
 $> [enter password of root]
 
 Restore database from a file:
-$> mysqldump -u root -p --databases [database_name] < [file_name].sql
+$> mysql -u root -p [database_name] < [file_name].sql
+In our case:
+$> mysql -u root -p ios_compare_db <backup2.sql
 $> [enter password of root]

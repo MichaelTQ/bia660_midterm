@@ -48,7 +48,103 @@ create table if not exists ios_seven_tweets
 	tw_time datetime
 );
 
-select * from ios_four_tweets;
+create table if not exists iphone3gs_tweets
+(
+	usr_id varchar(255),
+	usr_name varchar(255),
+	usr_url varchar(255),
+	tw_content varchar(255),
+	tw_url varchar(255) primary key,
+	tw_time datetime
+);
+
+create table if not exists iphone4_tweets
+(
+	usr_id varchar(255),
+	usr_name varchar(255),
+	usr_url varchar(255),
+	tw_content varchar(255),
+	tw_url varchar(255) primary key,
+	tw_time datetime
+);
+
+create table if not exists iphone4s_tweets
+(
+	usr_id varchar(255),
+	usr_name varchar(255),
+	usr_url varchar(255),
+	tw_content varchar(255),
+	tw_url varchar(255) primary key,
+	tw_time datetime
+);
+
+create table if not exists iphone5_tweets
+(
+	usr_id varchar(255),
+	usr_name varchar(255),
+	usr_url varchar(255),
+	tw_content varchar(255),
+	tw_url varchar(255) primary key,
+	tw_time datetime
+);
+
+create table if not exists iphone5s_tweets
+(
+	usr_id varchar(255),
+	usr_name varchar(255),
+	usr_url varchar(255),
+	tw_content varchar(255),
+	tw_url varchar(255) primary key,
+	tw_time datetime
+);
+
+create table if not exists iphone5s_only_tweets
+(
+	usr_id varchar(255),
+	usr_name varchar(255),
+	usr_url varchar(255),
+	tw_content varchar(255),
+	tw_url varchar(255) primary key,
+	tw_time datetime
+);
+
+create table if not exists iphone5c_only_tweets
+(
+	usr_id varchar(255),
+	usr_name varchar(255),
+	usr_url varchar(255),
+	tw_content varchar(255),
+	tw_url varchar(255) primary key,
+	tw_time datetime
+);
+
+describe ios_four_tweets;
+
+select * from iphone3gs_tweets;
+select count(*) from iphone3gs_tweets;
+
+show tables;
+
+select * from iphone4_tweets;
+select count(*) from iphone4_tweets;
+
+select * from iphone4s_tweets;
+select count(*) from iphone4s_tweets;
+
+select * from iphone5_tweets;
+select count(*) from iphone5_tweets;
+
+select * from iphone5s_tweets;
+select count(*) from iphone5s_tweets;
+
+select * from iphone5s_only_tweets;
+select count(*) from iphone5s_only_tweets;
+
+select * from iphone5c_only_tweets;
+select count(*) from iphone5c_only_tweets;
+
+select tw_url, tw_content, tw_time from ios_four_tweets order by tw_time DESC;
+select * from ios_four_tweets order by tw_time;
 select * from ios_five_tweets;
 select * from ios_six_tweets;
 select * from ios_seven_tweets;

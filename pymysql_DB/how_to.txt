@@ -5,6 +5,6 @@ Mysql backup database:
 $> mysqldump -u root -p [database_name] > [file_name].sql
 $> [enter password of root]
 
-Backup database from a file:
-$> mysqldump -u root -p --databases [database_name] > [file_name].sql
+Restore database from a file:
+$> mysqldump -u root -p --databases [database_name] < [file_name].sql
 $> [enter password of root]

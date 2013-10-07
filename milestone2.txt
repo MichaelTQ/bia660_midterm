@@ -1,0 +1,18 @@
+I have uploaded recent updates about our project to GitHub.
+Here is what we have done so far:
+1. data collection, each key-word/table has more than 2200 tweets/rows.
+2. checking positive or negative tweets, still using old way - comparing tweets' content to self-made positive/negative dictionary.
+3. data visualization, each topic - iOS4/5/6/7, iPhone3GS/4/4S/5/5S, iPhone 5S/5C - has a bar chart and a pie chart.
+
+The following is the screenshots:
+printed data:
+Inline image 1    Inline image 3    Inline image 2
+
+bar charts:
+Inline image 4    Inline image 5    Inline image 6
+
+pie charts:
+Inline image 7    Inline image 8    Inline image 9
+
+Next, maybe we can try to improve our algorithm of checking the attitude of the tweets, or find a better way to represent the data.
+I am gonna try to design a powerpoint for us to make presentation, please tell me if you have any good ideas.
